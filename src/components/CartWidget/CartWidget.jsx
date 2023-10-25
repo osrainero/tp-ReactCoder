@@ -1,10 +1,11 @@
 import React from 'react';
+import { BiCartAdd } from "react-icons/bi";
 
 
 const CartWidget = () => {
     return (
         <div>
-            <img src="" alt="Carrito" width="24px" height="24px" />
+            <BiCartAdd />
             <span>0</span>
         </div>
     );
