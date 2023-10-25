@@ -4,8 +4,8 @@ import React from 'react';
 const CartWidget = () => {
     return (
         <div>
-            <img src="" alt="" width="24px" height="24px" />
-            <p>0</p>
+            <img src="" alt="Carrito" width="24px" height="24px" />
+            <span>0</span>
         </div>
     );
 };
