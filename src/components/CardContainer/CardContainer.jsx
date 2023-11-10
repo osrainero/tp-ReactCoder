@@ -1,0 +1,11 @@
+import React from 'react';
+
+const CardContainer = ({children}) => {
+    return (
+        <div>
+            {children}
+        </div>
+    );
+};
+
+export default CardContainer;
