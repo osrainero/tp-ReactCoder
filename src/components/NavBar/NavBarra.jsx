@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget.jsx';
 
-function ColorSchemesExample() {
+function NavBarra() {
   return (
     <>
       <Navbar fixed="top" expand="lg" bg="dark" data-bs-theme="dark">
@@ -27,4 +27,4 @@ function ColorSchemesExample() {
   );
 }
 
-export default ColorSchemesExample;
+export default NavBarra;

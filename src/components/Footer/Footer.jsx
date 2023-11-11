@@ -1,12 +1,11 @@
 import React from 'react';
 
-
-const Card = ({children}) => {
+const Footer = () => {
     return (
         <div>
-            {children}
+            <h1>FOOTER</h1>
         </div>
     );
 };
 
-export default Card;
+export default Footer;

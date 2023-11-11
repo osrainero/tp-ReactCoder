@@ -1,0 +1,95 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Remera Blanca Clásica",
+        "precio": 19.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera blanca clásica y cómoda.",
+        "stock": 100,
+        "categoria": "Clásicas"
+      },
+      {
+        "id": 2,
+        "nombre": "Remera Negra Estampada",
+        "precio": 24.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera negra con un diseño estampado único.",
+        "stock": 50,
+        "categoria": "Estampadas"
+      },
+      {
+        "id": 3,
+        "nombre": "Remera Azul a Rayas",
+        "precio": 22.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera azul con rayas horizontales.",
+        "stock": 75,
+        "categoria": "Rayadas"
+      },
+      {
+        "id": 4,
+        "nombre": "Remera Roja Básica",
+        "precio": 18.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera roja básica para cualquier ocasión.",
+        "stock": 120,
+        "categoria": "Básicas"
+      },
+      {
+        "id": 5,
+        "nombre": "Remera Verde a Cuadros",
+        "precio": 27.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera verde con un patrón de cuadros.",
+        "stock": 60,
+        "categoria": "Cuadros"
+      },
+      {
+        "id": 6,
+        "nombre": "Remera Amarilla con Logo",
+        "precio": 21.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera amarilla con un logotipo impreso.",
+        "stock": 90,
+        "categoria": "Logotipo"
+      },
+      {
+        "id": 7,
+        "nombre": "Remera Gris a Rayas",
+        "precio": 23.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera gris con rayas verticales elegantes.",
+        "stock": 70,
+        "categoria": "Rayadas"
+      },
+      {
+        "id": 8,
+        "nombre": "Remera Morada Estampada",
+        "precio": 26.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera morada con un estampado artístico.",
+        "stock": 55,
+        "categoria": "Estampadas"
+      },
+      {
+        "id": 9,
+        "nombre": "Remera Celeste Básica",
+        "precio": 20.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera celeste esencial para tu guardarropa.",
+        "stock": 85,
+        "categoria": "Básicas"
+      },
+      {
+        "id": 10,
+        "nombre": "Remera Negra con Capucha",
+        "precio": 29.99,
+        "img": "./img/remera.jpg",
+        "descripcion": "Una remera negra con capucha para un estilo urbano.",
+        "stock": 45,
+        "categoria": "Capuchas"
+      }
+    ]
+  }
+  

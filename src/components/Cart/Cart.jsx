@@ -1,12 +1,11 @@
 import React from 'react';
 
-
-const Card = ({children}) => {
+const Cart = () => {
     return (
         <div>
-            {children}
+            <h1>TU CARRITO</h1>
         </div>
     );
 };
 
-export default Card;
+export default Cart;

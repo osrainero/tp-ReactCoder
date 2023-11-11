@@ -1,12 +1,11 @@
 import React from 'react';
 
-
-const Card = ({children}) => {
+const Error = () => {
     return (
         <div>
-            {children}
+            <h1>ERROR 404</h1>
         </div>
     );
 };
 
-export default Card;
+export default Error;

@@ -1,24 +1,20 @@
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
+import NavBarra from './components/NavBar/NavBarra.jsx';
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
 import Greeting from './components/Greeting/Greeting.jsx';
 import CardContainer from './components/CardContainer/CardContainer.jsx';
 import Card from './components/Card/Card.jsx';
+import Interruptor from './components/Interruptor/Interruptor.jsx';
 
 function App() {
-  const greeting = "Hola Visitante!!"
-
+  
   return (
     <>
-      <h1>Productos Artesanales</h1>
+      <h1>Tienda de Remeras</h1>
       <div>
-        <NavBar />
-        <ItemListContainer mensaje= {greeting}  />
-        <Greeting />
-        <CardContainer>
-          <Card/>
-        </CardContainer>
+        <NavBarra />
       </div>
     </>
   );
