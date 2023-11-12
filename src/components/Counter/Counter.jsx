@@ -1,5 +1,5 @@
 import React from 'react';
-import UseCounter from '../useCounter/useCounter';
+import useCounter from '../useCounter/useCounter';
 
 const Counter = () => {
 
