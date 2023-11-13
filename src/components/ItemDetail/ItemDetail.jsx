@@ -1,31 +1,27 @@
-import React,{useState} from 'react';
-import ItemCount from '../ItemCount/ItemCount';
-import { Link } from 'react-router-dom';
+import React from "react";
+import ItemCount from "../ItemCount/ItemCount";
+import "./ItemDetail.scss";
 
-const ItemDetail = ({producto}) => {
-
-    const [quantity,setQuantity] = useState(0)
-
-    const onAdd = (cantidad) => {
-        setQuantity(cantidad)
-    }
-    
-    return (
+const ItemDetail = ({ producto }) => {
+  const onAdd = (quantity) => {
+    console.log(quantity);
+  };
+  return (
+    <>
+      <div className="detail-container">
         <div>
-            <img src={producto.img} alt={producto.nombre} />
-            <h2>{producto.nombre}</h2>
-            <p>Stock: {producto.stock}</p>
-            <p>Precio: {producto.precio}</p>
-            <p>Categoria: {producto.categoria}</p>
-            <p>Descripción: {producto.descripcion}</p>
-            {quantity 
-            == 0 ? 
-            <ItemCount initial={1} stock={producto.stock} onAdd={onAdd}/>
-            :
-            <Link to={"/Cart"}>Ir al carrito</Link>
-            }
+          <img src={producto.img} alt={producto.name} />
         </div>
-    );
+        <div>
+          <h2>{producto.name}</h2>
+          <p class="detail-container__price">${producto.price}</p>
+          <p class="detail-container__description">{producto.description}</p>
+          <p class="detail-container__size">{producto.size}</p>
+          <ItemCount initial={1} stock={producto.stock} onAdd={onAdd} />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default ItemDetail;

@@ -1,0 +1,13 @@
+.productos {
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  align-content: flex-start;
+  background-color: #ffffff;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+}

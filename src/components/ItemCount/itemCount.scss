@@ -1,0 +1,17 @@
+.quantity-button {
+  border: 1px #4467d6 solid;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: #4467d6;
+  }
+}

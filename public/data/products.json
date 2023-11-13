@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Urban Skater Stripes Tee",
+    "description": "The Urban Skater Stripes Tee is the ultimate choice for skaters looking for a lightweight and breathable short-sleeve shirt. Its bold stripes and classic design make it a go-to pick for a day at the skatepark or a casual hangout in the city.",
+    "img": "/img/remera1.webp",
+    "price": 4190,
+    "size": "M - L - XL",
+    "category": "Skater Tees",
+    "stock": 6
+  },
+  {
+    "id": 2,
+    "name": "Gritty Streetwear U-Neck",
+    "description": "Embrace the street vibe with our Gritty Streetwear V-Neck. This short-sleeve tee combines edgy style with skater functionality, offering comfort and freedom of movement. Perfect for sunny skate sessions and urban adventures.",
+    "img": "/img/remera2.webp",
+    "price": 3521,
+    "size": "L - XL",
+    "category": "Skater Shirts",
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "name": "Retro Skate Park Jersey",
+    "description": "Ride back in time with the Retro Skate Park Jersey, a short-sleeve classic that captures the essence of skateboarding's golden age. Whether you're tearing up the halfpipe or cruising the streets, this tee has you covered.",
+    "img": "/img/remera3.webp",
+    "price": 4987,
+    "size": "S - L - XL",
+    "category": "Skater Shirts",
+    "stock": 5
+  },
+  {
+    "id": 4,
+    "name": "High-Performance Skate Crewneck",
+    "description": "For high-performance skate sessions, the High-Performance Skate Crewneck is your ally. Its short sleeves allow for unrestricted arm movement, while the advanced materials provide durability and comfort during your most demanding tricks.",
+    "img": "/img/remera4.webp",
+    "price": 4325,
+    "size": "L - XL",
+    "category": "Skater Tees",
+    "stock": 7
+  },
+  {
+    "id": 5,
+    "name": "Vintage Skateboard Graphic Tee",
+    "description": "Make a statement with the Vintage Skateboard Graphic Tee, featuring short sleeves for that skate-ready feel. The eye-catching graphics pay homage to the roots of skateboarding, making it a staple for skaters looking to express their passion in style.",
+    "img": "/img/remera5.webp",
+    "price": 3678,
+    "size": "M - L - XL",
+    "category": "Skater Shirts",
+    "stock": 4
+  },
+  {
+    "id": 6,
+    "name": "Modern Skater Essentials Shirt",
+    "description": "Stay ahead of the curve with our Modern Skater Essentials Shirt, a short-sleeve wonder that blends skater attitude with versatile fashion. It's perfect for skating and effortlessly transitions to a cool streetwear look for any occasion",
+    "img": "/img/remera6.webp",
+    "price": 4932,
+    "size": "S - M",
+    "category": "Skater Shirts",
+    "stock": 9
+  },
+  {
+    "id": 7,
+    "name": "Street Style Top",
+    "description": "Elevate your street style with the Street Style Short Sleeve Top. Designed for skaters, this short-sleeve tee offers comfort and style, making it an excellent choice for showing off your skateboarding prowess and fashion sense.",
+    "img": "/img/remera7.webp",
+    "price": 3114,
+    "size": "S - L",
+    "category": "Skater Tees",
+    "stock": 10
+  }
+]
