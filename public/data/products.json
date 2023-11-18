@@ -68,5 +68,33 @@
     "size": "S - L",
     "category": "Skater Tees",
     "stock": 10
-  }
+  },
+  {
+    "id": 8,
+    "name": "Gritty Streetwear Long Sleeve Tee",
+    "description": "Embrace the street vibe with our Gritty Streetwear Long Sleeve Tee. This long-sleeve tee combines edgy style with skater functionality, offering comfort and freedom of movement. Perfect for cooler skate sessions and urban adventures.",
+    "img": "/img/remera8.webp",
+    "price": 6521,
+    "size": "L - XL",
+    "category": "Skater LS Shirts",
+    "stock": 12
+  },
+  {
+    "id": 9,
+    "name": "Retro Long Sleeve Tee",
+    "description": "Relive the nostalgia of classic video games with our Retro Gaming Console. This console allows you to play a wide variety of retro games, with a collection of classics built-in and the ability to load more games via SD cards. The authentic gaming experience is combined with HDMI connectivity for crisp graphics on your TV.",
+    "img": "/img/remera9.webp",
+    "price": 4567,
+    "size": "S - M - XL",
+    "category": "Skater LS Shirts",
+    "stock": 20
+   }
 ]
+  
+
+
+
+
+
+
+

@@ -24,6 +24,7 @@ const NavBar = () =>{
             <NavDropdown title="T-Shirts" id="collapsible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/category/Skater Tees">Skater Tees</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/category/Skater Shirts">Skater Shirts</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Skater LS Shirts">Skater Long S Shirts</NavDropdown.Item>
             </NavDropdown>
           </Nav>
 		      <Navbar.Collapse className="justify-content-end">

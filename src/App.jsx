@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/ItemdetailContainer/ItemDetailContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Error from "./components/Error/Error";
 import Contacto from "./components/Contacto/Contacto"
