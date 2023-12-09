@@ -1,47 +1,53 @@
-import React, { useState, useEffect } from "react";
-import ItemList from "../ItemList/ItemList";
-import Spinner from "react-bootstrap/Spinner";
-import Container from "react-bootstrap/Container";
-
-import { useParams } from "react-router-dom";
-import "./itemListContainer.scss";
+import React, { useState, useEffect } from 'react';
+import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 const ItemListContainer = () => {
-  const [products, setProducts] = useState([]);
-  const { categoryId } = useParams();
 
-  useEffect(() => {
-    const fetchData = () => {
-      return fetch("/data/products.json")
-        .then((response) => response.json())
-        .then((data) => {
-          if (categoryId) {
-            const filterProducts = data.filter(
-              (p) => p.category === categoryId
-            );
-            setProducts(filterProducts);
-          } else {
-            setProducts(data);
-          }
-        })
-        .catch((error) => console.log(error));
-    };
-    fetchData();
-  }, [categoryId]);
+    const [productos, setProductos] = useState([]);
+    const { categoryId } = useParams();
+    const db = getFirestore();
+    const collectionRef = collection(db, 'ventaprod');
 
-  return (
-    <>
-      <Container>
-        {products.length == 0 ? (
-          <Spinner animation="grow" />
-        ) : (
-          <section className="productos">
-            <ItemList products={products} />
-          </section>
-        )}
-      </Container>
-    </>
-  );
+
+    useEffect(() => {
+        const fetchData = async () => {
+
+            try {
+                const snapshot = await getDocs(collectionRef);
+
+                if (snapshot.docs.length > 0) {
+             
+                    const filteredProductos = categoryId
+                        ? snapshot.docs
+                            .filter((doc) => doc.data().categoria === categoryId)
+                            .map((doc) => ({ id: doc.id, ...doc.data() }))
+                        : snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+
+                    setProductos(filteredProductos);
+
+                } else {
+                    setProductos([]);
+                }
+
+            } catch (error) {
+                console.error('Error al incorporar informacion desde Firebase:', error);
+            }
+        };
+
+        fetchData();
+    }, [categoryId])
+
+
+
+    return (
+        <>
+            {productos.length == 0
+                ? <h1>CARGANDO...</h1>
+                : <ItemList productos={productos} />}
+        </>
+    );
 };
 
 export default ItemListContainer;

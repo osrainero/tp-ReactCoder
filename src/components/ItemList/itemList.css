@@ -1,0 +1,11 @@
+.contiene-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.contiene-tarjetas > div {
+    width: 48%; 
+    margin-bottom: 20px; 
+}

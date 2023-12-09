@@ -1,0 +1,43 @@
+.div-checkout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+
+.form-checkout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.form-input {
+  margin: 10px 0;
+}
+
+.div-precio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+
+.operacion-finalizada {
+  font-weight: bold;
+
+}
+
+.invisible-btn{
+  display: none;
+}

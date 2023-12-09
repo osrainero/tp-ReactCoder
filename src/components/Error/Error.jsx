@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 const Error = () => {
-  return (
-    <div>
-      <p>Lo que estas buscando no existe.</p>
-    </div>
-  );
+    return (
+        <div>
+            <h1>404 Error..  </h1>
+        </div>
+    );
 };
 
 export default Error;

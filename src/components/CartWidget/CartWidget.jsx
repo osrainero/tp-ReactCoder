@@ -1,14 +1,22 @@
-import React from "react";
-import { BiCart } from "react-icons/bi";
-import "./cartwidget.scss";
+import React, { useContext }  from "react";
+import "../CartWidget/cartWidget.css";
+import { BsFillCartFill } from "react-icons/bs";
+import { CartContext } from '../../context/CartContext';
+
 
 const CartWidget = () => {
-  return (
-    <div className="cartwidget">
-      <p>0</p>
-      <BiCart className="cart" />
-    </div>
-  );
-};
+
+    const { getTotalProductos } = useContext(CartContext)
+
+    return (
+        <nav className="cart-widget">
+            <div className="cart-info">
+                <BsFillCartFill />
+                <p>{getTotalProductos()}</p>
+            </div>
+        </nav>
+    )
+}
 
 export default CartWidget;
+
