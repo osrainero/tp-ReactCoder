@@ -21,7 +21,7 @@ function App() {
       
         <CartProvider>
         <NavBar />
-         
+        <div className="body-container">
 
           <Routes>
 
@@ -35,7 +35,7 @@ function App() {
             <Route path='*' element={<Error />} />
 
           </Routes>
-
+        </div>
         </CartProvider>
 
       </BrowserRouter>

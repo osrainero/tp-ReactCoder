@@ -18,6 +18,11 @@ export const CartProvider = ({ children }) => {
         }
     }
 
+    const removeProducto = (id) => {   
+        const filtrarCarrito = cartProducto.filter((s) => s.producto.id !== id)
+        setCartProducto(filtrarCarrito)
+    }
+
     const clearCart = () => {
         setCartProducto([]);
     }
@@ -26,11 +31,6 @@ export const CartProvider = ({ children }) => {
         let cantidad = 0
         cartProducto.forEach((item) => cantidad += item.cantidad)
         return cantidad
-    }
-
-    const removeProducto = (id) => {   
-        const filtrarCarrito = cartProducto.filter((s) => s.producto.id !== id)
-        setCartProducto(filtrarCarrito)
     }
 
     const TotalPorProductos = () => {

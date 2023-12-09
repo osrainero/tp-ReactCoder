@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import "./checkout.css"
+import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Checkout = () => {
     const { clearCart, TotalPorProductos, getTotalProductos } = useContext(CartContext);
@@ -48,7 +50,7 @@ const Checkout = () => {
         Swal.fire({
             position: "center",
             icon: "success",
-            title: `Compra realizada! Número de Operacion: ${randomNumber}`,
+            title: `Compra realizada! Número de seguimiento: ${randomNumber}`,
             showConfirmButton: true,
             confirmButtonText: "Confirmado",
             timer: 10000
@@ -65,9 +67,11 @@ const Checkout = () => {
 
 
     return (
-        <div className='div-checkout'>
-            <form className='form-checkout'>
-                <label>Nombre</label>
+
+        <div className='pagacion'>
+            <form>
+            <div className='formcontent'>
+            <label>Nombre</label>
                 <input
                     type="text"
                     value={formData.nombre}
@@ -98,20 +102,17 @@ const Checkout = () => {
                     onChange={handleInputChange}
                     name="tel"
                 />
-
-
-                <div className='div-precio'>
-                    <h1>Valor Final</h1>
-                    <p>Total Productos : {getTotalProductos()} </p>
+            </div>
+            <div className='infocontent'>
+            <h1>Estas por comprar:</h1>
+                    <p>Cantidad de Productos : {getTotalProductos()} </p>
                     <p>Precio Final: {TotalPorProductos()} </p>
-
-                </div>
-
                 <div>
-                    <Link to={"/Carro"}>Volver a Carrito</Link>
-                    <button className={` ${botonVisible ? '' : 'invisible-btn'}`} type="submit" onClick={procesoPago}>Pagar</button>
+                    <Button variant="secondary" as={Link} to={`/Carro`}>Volver al Carrito</Button><br/>
+                    <Button variant="success" type="submit" onClick={procesoPago}>Pagar</Button>
                 </div>
 
+            </div>
             </form>
         </div>
     );

@@ -3,6 +3,9 @@ import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
@@ -43,9 +46,16 @@ const ItemListContainer = () => {
 
     return (
         <>
-            {productos.length == 0
-                ? <h1>CARGANDO...</h1>
-                : <ItemList productos={productos} />}
+
+            <div className='productsContainer'>
+                <Container>
+                    <Row>
+                    {productos.length == 0
+                    ? <h2>CARGANDO...</h2>
+                    : <ItemList productos={productos} />} 
+                    </Row>
+                </Container>
+            </div>
         </>
     );
 };

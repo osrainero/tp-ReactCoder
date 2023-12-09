@@ -2,7 +2,11 @@ import React, { useState, useContext } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
-import "./ItemDetail.css"
+
+import { Button, CardBody } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import './itemDetail.css'
 
 
 
@@ -19,23 +23,33 @@ const ItemDetail = ({ producto }) => {
     }
 
     return (
-        <div className='div-detalle'>
-            <img src={producto.img} alt={producto.nombre} />
-            <h1>{producto.nombre}</h1>
-            <p>Stock: {producto.cantidad}</p>
-            <p>Precio: {producto.precio}</p>
-            <p>Categoria: {producto.categoria}</p>
-            <p>Descripción: {producto.descripcion}</p>
+        <>
+            <Card className='card' style={{ width: '25em' }}>
+                <Card.Img className="productImg" variant="top" src={producto.img} />
+                <Card.Body>
+                    <Card.Title>{producto.nombre}</Card.Title>
+                    <Card.Text>
+                    {producto.descripcion}
+                    </Card.Text>
+                </Card.Body>
+                <ListGroup className="list-group-flush">
+                    <ListGroup.Item>Precio: {producto.precio}</ListGroup.Item>
+                    <ListGroup.Item>Stock:  {producto.cantidad}</ListGroup.Item>
+                </ListGroup>
 
-
-            {quantity
-                == 0 ?
+                <CardBody>
+                {
+                quantity
+                 == 0 ?
                 <ItemCount initial={1} stock={producto.cantidad} onAdd={onAdd} />
-                :
+                 :
                 <Link to={"/Carro"}>Ir al carrito</Link>
-            }
+                }
+                </CardBody>
+                
+            </Card>
+        </>
 
-        </div>
     );
 };
 

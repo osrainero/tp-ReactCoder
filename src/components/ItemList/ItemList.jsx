@@ -1,17 +1,27 @@
 import React from 'react';
 import Item from '../Item/Item';
-import "./itemList.css"
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 const ItemList = ({ productos }) => {
 
     return (
         <>
-            <div className='contiene-tarjetas'>
-                {productos.map((producto) => (
-                <Item key={producto.id} producto={producto} />
-            ))}
-            </div>
-
+            <Container>
+                <Row>
+               
+                    {
+                        productos.map((producto) => 
+                        <Col>
+                            <Item key={producto.id} producto={producto} />
+                        </Col>                        
+                        )
+                    }
+                </Row>
+            </Container>
         </>
     );
 };

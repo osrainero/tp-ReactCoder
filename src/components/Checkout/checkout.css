@@ -1,43 +1,50 @@
-.div-checkout {
+.pagacion {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  margin-top: 100px;
-  border: 1px solid #ccc;
-  border-radius: 10%;
-  padding: 10px;
+  justify-content: space-between; 
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-.form-checkout {
+.formcontent {
+  width: 45%; /* Ajusta según sea necesario */
+}
+
+.infocontent {
+  width: 45%; /* Ajusta según sea necesario */
+}
+
+form {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+form label {
   width: 100%;
-  margin: auto;
+  margin-bottom: 5px;
 }
 
-.form-input {
-  margin: 10px 0;
-}
-
-.div-precio {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+form input {
   width: 100%;
-  margin: auto;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
-
-.operacion-finalizada {
-  font-weight: bold;
-
+.infocontent h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.invisible-btn{
+.infocontent p {
+  margin-bottom: 5px;
+}
+
+.infocontent div {
+  margin-top: 20px;
+}
+
+.invisible-btn {
   display: none;
 }

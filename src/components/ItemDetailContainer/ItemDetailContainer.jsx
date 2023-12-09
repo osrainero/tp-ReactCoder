@@ -3,6 +3,12 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { getFirestore, collection, getDocs } from "firebase/firestore"
 
+import Container from 'react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/esm/Row';
+import Col from 'react-bootstrap/esm/Col';
+
+
+
 const ItemDetailContainer = () => {
 
     const [producto, setProducto] = useState(null)
@@ -36,13 +42,22 @@ const ItemDetailContainer = () => {
       }, [collectionRef, idProducto]);
 
     return (
-        <div>
-            {
-                producto 
-                ? <ItemDetail producto={producto} /> 
-                : <p>CARGANDO..</p>
-            }
-        </div>
+      <div className='productsContainer'>
+      <Container>
+          <Row>
+              <Col></Col>
+              <Col>
+              {
+                 producto 
+                 ? <ItemDetail producto={producto} /> 
+                 : <h2>CARGANDO..</h2>
+             }
+              </Col>
+              <Col></Col>
+          </Row>
+      </Container>
+  </div>
+  
     );
 };
 

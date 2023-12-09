@@ -1,9 +1,9 @@
-.div-carro{
-    margin-top: 160px;
+.list-inline {
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 0;
 }
-.button-cart{
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 10px;
+.list-inline > li {
+	display: inline-block;
+    list-style-type: none;
 }
