@@ -15,8 +15,8 @@ const ItemList = ({ productos }) => {
                
                     {
                         productos.map((producto) => 
-                        <Col>
-                            <Item key={producto.id} producto={producto} />
+                        <Col key={producto.id} >
+                            <Item producto={producto} />
                         </Col>                        
                         )
                     }
